@@ -14,6 +14,7 @@
 
 - [#933](https://github.com/estruyf/vscode-front-matter/issues/933): Timezone setting integration in the DateTime field
 - [#942](https://github.com/estruyf/vscode-front-matter/issues/942): Fix to typo on welcome screen thanks to [Stephanie Wertman](https://github.com/stephanie-wertman)
+- [#957](https://github.com/estruyf/vscode-front-matter/issues/957): Fix media assets retrieval where `mtime` is not defined. Fallback to the `mtimeMs` property if available.
 
 ## [10.8.0] - 2025-02-27 - [Release notes](https://beta.frontmatter.codes/updates/v10.8.0)
 
