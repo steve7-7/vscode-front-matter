@@ -16,6 +16,7 @@ export interface MediaInfo {
   dimensions?: ISizeCalculationResult | undefined;
   mimeType?: string | undefined;
   mtime?: Date;
+  mtimeMs?: number;
   ctime?: Date;
   size?: number;
 

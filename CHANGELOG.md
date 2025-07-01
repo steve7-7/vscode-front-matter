@@ -1,5 +1,21 @@
 # Change Log
 
+## [10.9.0] - 2025-07-01 - [Release notes](https://beta.frontmatter.codes/updates/v10.9.0)
+
+### 🎨 Enhancements
+
+- [#962](https://github.com/estruyf/vscode-front-matter/issues/962): Added Simplified Chinese localization thanks to [Randerion(HaoJun0823)](https://github.com/HaoJun0823)
+
+### ⚡️ Optimizations
+
+- [#922](https://github.com/estruyf/vscode-front-matter/issues/922): Added the `{{slugifiedFileName}}` for better naming
+
+### 🐞 Fixes
+
+- [#933](https://github.com/estruyf/vscode-front-matter/issues/933): Timezone setting integration in the DateTime field
+- [#942](https://github.com/estruyf/vscode-front-matter/issues/942): Fix to typo on welcome screen thanks to [Stephanie Wertman](https://github.com/stephanie-wertman)
+- [#957](https://github.com/estruyf/vscode-front-matter/issues/957): Fix media assets retrieval where `mtime` is not defined. Fallback to the `mtimeMs` property if available.
+
 ## [10.8.0] - 2025-02-27 - [Release notes](https://beta.frontmatter.codes/updates/v10.8.0)
 
 ### 🎨 Enhancements

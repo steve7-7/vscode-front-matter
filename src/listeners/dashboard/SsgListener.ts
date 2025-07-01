@@ -114,7 +114,12 @@ export class SsgListener extends BaseListener {
     }
 
     // https://github.com/withastro/astro/blob/defab70cb2a0c67d5e9153542490d2749046b151/packages/astro/src/content/utils.ts#L450
-    const contentConfig = await workspace.findFiles(`**/src/content/config.*`);
+    let contentConfig = await workspace.findFiles(`**/src/content/config.*`);
+    
+    // Also search for content.config.* files (newer pattern)
+    if (contentConfig.length === 0) {
+      contentConfig = await workspace.findFiles(`**/content.config.*`);
+    }
 
     if (contentConfig.length === 0) {
       SsgListener.sendRequest(command as any, requestId, []);

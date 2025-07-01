@@ -172,7 +172,14 @@ export class MediaHelpers {
         }
       })
     );
-    files = files.filter((f) => f.mtime !== undefined);
+    files = files
+      .filter((f) => f.mtime !== undefined || f.mtimeMs !== undefined)
+      .map((f) => {
+        if (f.mtime === undefined && f.mtimeMs !== undefined) {
+          return { ...f, mtime: new Date(f.mtimeMs as number) };
+        }
+        return f;
+      });
 
     // Sort the files
     if (crntSort?.type === SortType.string) {
