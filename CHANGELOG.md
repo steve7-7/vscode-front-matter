@@ -2,6 +2,10 @@
 
 ## [10.9.0] - 2025-07-01 - [Release notes](https://beta.frontmatter.codes/updates/v10.9.0)
 
+### 🎨 Enhancements
+
+- [#962](https://github.com/estruyf/vscode-front-matter/issues/962): Added Simplified Chinese localization thanks to [Randerion(HaoJun0823)](https://github.com/HaoJun0823)
+
 ### ⚡️ Optimizations
 
 - [#922](https://github.com/estruyf/vscode-front-matter/issues/922): Added the `{{slugifiedFileName}}` for better naming
