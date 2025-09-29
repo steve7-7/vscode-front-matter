@@ -1,4 +1,4 @@
-## Support the project
+# Support the project
 
 Front Matter is an open source project and we are always looking for new contributors, supporters, and partners. If you are interested in backing the project, please consider supporting it by donating. You can donate at via the following links:
 
